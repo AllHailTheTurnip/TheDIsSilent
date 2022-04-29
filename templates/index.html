@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    {% load static %}
+    <link href="{% static "Home.css" %}" rel="stylesheet">
+    <link href="{% static "General.css" %}" rel="stylesheet">
+    <script src="{% static "WordRemovalPuzzle.js" %}" type="text/javascript"></script>
+</head>
+<body>
+
+<!-- The primary divider that the data will be formatted in. -->
+<div class="Main">
+    <img src="{% static "Logo.png" %}" alt="MIDWESTERN" class="Logo">
+    <a class="ContactButton" href="contact">contact</a>
+    <br>
+
+    <!-- The holding element for the boxes. -->
+    <div class="Boxes">
+        <!-- The walkie-talkie. -->
+        <div class="Box">
+            <img class="CenteredImage" src="{% static "Talkie.png" %}" alt="Microphone">
+            <h1>Hallucinating?</h1>
+                <p>
+                    {{ radio|first }}
+                </p>
+            <input class="LearnMoreButton" type="button" value="Learn more">
+        </div>
+
+        <!-- The rabbit. -->
+        <div class="Box">
+            <img class="CenteredImage" src="{% static "Rabbit.png" %}" alt="Rabbit">
+            <h1>Hungry?</h1>
+            <p>
+                {{ bunny|first }}
+            </p>
+            <input class="LearnMoreButton" type="button" value="Learn more">
+        </div>
+
+        <!-- The shield. -->
+        <div class="Box">
+            <img class="CenteredImage" src="{% static "Shield.png" %}" alt="Shield">
+            <h1>Afraid?</h1>
+            <p>
+                {{ shield|first }}
+            </p>
+            <input class="LearnMoreButton" type="button" value="Learn more">
+        </div>
+    </div>
+    <br>
+
+    <!-- The puzzle-game. -->
+    <h1 class="PrimaryHeading">
+        <u>Game</u> time!
+    </h1>
+    <p style="font-family: Poppins-Medium,serif; color: #F5F5F5">
+        Hi there! Below are two JavaScript arrays, each containing a set of names.
+        Press
+        <a href="#" onclick=
+                "ListOfNames3 = RemoveCopies(ListOfNames1, ListOfNames2);
+            PopulateBulletedList('UniqueList', ListOfNames3);"
+           class="Link">this button</a>
+        to combine the arrays and remove the copies.
+    </p>
+    <br>
+
+    <!-- A set of three boxes, similar in design to the above. Each contains an empty unordered-list. -->
+    <!-- Because no actual details were displayed in the Figma, no extra stylizing will be done with them. -->
+    <div class="Boxes">
+        <div class="Box">
+            <h2>List 1</h2>
+            <ul id="FirstList">
+
+            </ul>
+        </div>
+
+        <div class="Box">
+            <h2>List 2</h2>
+            <ul id="SecondList">
+
+            </ul>
+        </div>
+
+        <div class="Box">
+            <h2>Unique List</h2>
+            <ul id="UniqueList">
+
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+<footer>
+    <script>
+        PopulateBulletedList("FirstList", ListOfNames1)
+        PopulateBulletedList("SecondList", ListOfNames2)
+    </script>
+</footer>
+</html>

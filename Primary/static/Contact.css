@@ -1,0 +1,58 @@
+.RightHalfDiv
+{
+    position: absolute;
+    background-color: #F5F5F5;
+    border: none;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+p
+{
+    inline-size: 25%;
+    text-shadow: 2px 2px 2px #000000;
+    font-family: Poppins-Light, serif;
+    overflow-wrap: break-word;
+}
+
+.LeftQuarter
+{
+    position: relative;
+    left: 5%;
+    margin-top: 7.5%;
+}
+
+.RightQuarter
+{
+    position: relative;
+    left: 12%;
+    top: 15%;
+    width: 75%;
+    height: 50%;
+}
+
+input, textarea
+{
+    background-color: #F2F2F2;
+    font-size: 20px;
+    border: none;
+    color: #858585;
+    font-family: Poppins-Medium;
+    padding: 1%;
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+
+.Send
+{
+    background-color: #DEBF79;
+    font-family: Poppins-Light;
+    color: #F5F5F5;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}

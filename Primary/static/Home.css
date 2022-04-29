@@ -1,0 +1,47 @@
+.Boxes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.Box {
+    aspect-ratio: 1/1;
+    width: 30%;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.CenteredImage {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25%;
+}
+
+.LearnMoreButton {
+    background-color: #DEBF79;
+    border-radius: 0px;
+    font-family: Poppins-Medium;
+    font-size: 125%;
+    color: #F5F5F5;
+    border-style: none;
+    padding: 15px;
+    position: absolute;
+    bottom: 50px;
+    transform: translate(-50%, 0%);
+}
+
+.ContactButton
+{
+    font-family: Poppins-Bold;
+    color: #DEBF79;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    position: absolute;
+    right: 5%;
+    top: 7%;
+    text-decoration: none;
+}

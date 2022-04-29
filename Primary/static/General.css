@@ -1,0 +1,128 @@
+body
+{
+    background-color: #222222;
+}
+
+.Main {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.Logo {
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+.CrossLink
+{
+    font-family: Poppins-Bold, serif;
+    color: #DEBF79;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    position: absolute;
+    right: 5%;
+    top: 7%;
+    text-decoration: none;
+    z-index: 99999;
+}
+
+u
+{
+    text-decoration-color: #DEBF79;
+}
+
+.Link {
+    text-decoration: none;
+    font-family: Poppins-Light, serif;
+}
+.InputText
+{
+    color: #858585;
+}
+
+.Contrast
+{
+    color: #F5F5F5
+}
+
+div h1
+{
+    color: #222222
+}
+
+div p
+{
+    color: #858585;
+}
+
+div div
+{
+    background-color: #F5F5F5;
+}
+
+.Box h1
+{
+    font-family: Poppins-Bold;
+}
+
+.Box p
+{
+    font-family: Poppins-Light;
+    color: #858585;
+}
+
+.PrimaryHeading
+{
+    color: #F5F5F5;
+    font-family: Poppins-Bold, serif;
+    font-size: 400%;
+}
+
+.underline
+{
+    color: #DEBF79
+}
+
+/*  I don't mean to sound impertinent,
+    but I don't believe there's any red
+    in the Figma demonstration.     */
+Red
+{
+    color: red;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url("Poppins-Medium.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url("Poppins-Bold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("Poppins-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.PoppinsMedium {
+    font-family: Poppins-Medium, serif;
+}
+
+.PoppinsBold
+{
+    font-family: Poppins-Bold, serif;
+}
+
+.PoppinsLight{
+    font-family: Poppins-Light, serif;
+}

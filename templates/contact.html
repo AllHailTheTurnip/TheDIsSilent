@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    {% load static %}
+    <link href="{% static "Contact.css" %}" rel="stylesheet">
+    <link href="{% static "General.css" %}" rel="stylesheet">
+</head>
+<body>
+<div class="Main">
+    <img src="{% static "Logo.png" %}" alt="MIDWESTERN" class="Logo">
+    <a class="CrossLink" href="/">home</a>
+    <br>
+
+    <div class="LeftQuarter" style="background-color: transparent">
+        <h1 class="PrimaryHeading"><u>Contact</u> us!</h1>
+        <p>
+            We possess the secrets to literal immortality.
+        </p>
+        <p>
+            You can live for all eternity and watch the universe fade into heat-death. Send us an email to find out how!
+        </p>
+    </div>
+
+    <div class="RightHalfDiv">
+        <div class="RightQuarter">
+            <h1 style="font-family: Poppins-Bold, serif; font-size: 250%">Send us a message!</h1>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <input type="text" id="firstName" name="firstName" value="First Name">
+                <input type="text" id="lastName" name="lastName" value="Last Name"><br>
+                <input type="text" id="title" name="title" value="Title Name">
+                <input type="text" id="email" name="email" value="Email"><br>
+                <textarea class="" id="message" name="message" rows="5" cols="64">Message</textarea>
+                <input class="Send" type="submit" id="sendButton" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
